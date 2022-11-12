@@ -1,0 +1,289 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+	color: #454545;
+}
+
+.container {
+	margin: 0 260px;
+}
+
+.btn {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.btn > div {
+	display: inline-block;
+}
+
+.btn span {
+	font-size: 14px;
+	color: #582c7e;
+	margin-right: 6px;
+}
+
+.btn-round {
+	font-size: 18px;
+	color: white;
+	padding: 8px 18px;
+	border-radius: 24px;
+	background: yellow;
+}
+
+.btn-full-round i {
+	font-size: 22px;
+	width: 1.6em;
+	text-align: center;
+	line-height: 1.6em;
+	background: rgb(88,44,126);
+	background: linear-gradient(135deg, rgba(88,44,126,1) 0%, rgba(98,120,206,1) 100%);
+	color: #fff;
+	border-radius: 0.8em; /* or 50% width & line-height */
+}
+
+.btn-purple {
+	background: rgb(88,44,126);
+	background: linear-gradient(135deg, rgba(88,44,126,1) 0%, rgba(98,120,206,1) 100%);
+}
+
+/* Header */
+.header-inner {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.header-logo span {
+	color: #5b4295;
+}
+
+.header-nav {
+	margin-left: auto;
+}
+
+.header-nav span {
+	cursor: pointer;
+	margin-right: 25px;
+}
+
+.header-nav span:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.header-nav span:last-child {
+	margin-right: 70px;
+}
+
+.header-buttons > a:first-child {
+	margin-right: 20px;
+}
+
+.header-languages {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.item-languages {
+	cursor: pointer;
+}
+
+.item-languages-active {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.item-languages:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.divider-languages {
+	margin: 0 10px;
+}
+
+/* Intro */
+.intro {
+	margin-top: 150px;
+	padding-bottom: 335px;
+	text-align: center;
+	background: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px -300px;
+}
+
+.intro h1, .intro h2 {
+	font-weight: 600;
+}
+
+.intro h1 {
+	font-size: 60px;
+}
+
+.intro h2 {
+	font-size: 36px;
+}
+
+.intro h2 span {
+	color: #fc2028;
+}
+
+.intro-buttons {
+	margin-top: 60px;
+}
+
+.intro-buttons > a {	
+	margin-right: 25px;
+}
+
+.intro-buttons > a:first-child {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.intro-buttons > a:last-child {
+	margin-right: 0;
+}
+
+/* Advantages */
+.advantages {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 120px;
+	position: relative;
+}
+
+.advantages-item {
+	flex-basis: 19%;
+}
+
+.advantages-item:nth-child(2)
+{
+	margin: 0 80px;
+}
+
+.advantages-head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.advantages-head > div:first-child {
+	margin-right: 18px;
+}
+
+.advantages-item-head-text {
+	font-size: 30px;
+	color: #555;
+	line-height: 0.8;
+}
+
+.advantages-item-head-subtext {
+	font-size: 18px;
+	color: #959393;
+}
+
+.advantages-item-text {
+ 	font-size: 14px;
+ }
+
+.horizontal-2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 15%;
+	height: 1px;
+	background: #bfbfbf;
+}
+
+.vertical-2 {
+	position: absolute;
+	right: 62%;
+	top: -97px;
+	width: 1px;
+	height: 180px;
+	background: #bfbfbf;
+}
+
+ /* Physical */
+.physical {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.physical-text {
+	text-align: right;
+	margin-right: 42%;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.physical-text h1 {
+	font-weight: 400;
+	font-size: 60px;
+}
+
+
+.physical-text span {
+	color: #f65151;
+}
+
+.physical-button {
+	margin-left: 53%;
+	display: inline-block;
+	padding: 12px 25px;
+	border-radius: 24px;
+	border: 1px solid #c9c9c9;
+}
+
+.horizontal-1 {
+	position: absolute;
+	left: 0;
+	top: 208px;
+	width: 53%;
+	height: 1px;
+	background: #bfbfbf;
+}
+
+.vertical-1 {
+	position: absolute;
+	left: 61%;
+	top: -287px;
+	width: 1px;
+	height: 470px;
+	background: #bfbfbf;
+}
+
+/* Sponsors-1 */
+.sponsors-1 {
+	margin-left: 100px;
+}
+
+/* Slider */
+.devices-slider-text {
+	font-size: 24px;
+	width: 520px;
+	color: #171717;
+}
+
+.devices-slider-text span {
+	font-size: 16px;
+	color: #727272;
+}
