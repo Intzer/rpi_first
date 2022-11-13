@@ -461,7 +461,7 @@ body {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 76%;
+	width: 1406px;
 	height: 1px;
 	background: #bfbfbf;
 }
@@ -483,6 +483,7 @@ body {
 footer {
 	padding-top: 150px;
 	background: #f9f9f9;
+	position: relative;
 }
 
 .contacts {
@@ -539,6 +540,33 @@ footer {
 	width: 5px;
 	height: 5px;
 	background: #5c5c5c;
+}
+
+.vertical-3 {
+	position: absolute;
+	left: 243px;
+	top: 155px;
+	width: 1px;
+	height: 120px;
+	background: #bfbfbf;
+}
+
+.vertical-4 {
+	position: absolute;
+	left: 935px;
+	top: 155px;
+	width: 1px;
+	height: 280px;
+	background: #bfbfbf;
+}
+
+.vertical-5 {
+	position: absolute;
+	left: 1405px;
+	bottom: 135px;
+	width: 1px;
+	height: 440px;
+	background: #bfbfbf;
 }
 
 /* Media */
