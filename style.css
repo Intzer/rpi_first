@@ -143,6 +143,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px -300px;
+	position: relative;
 }
 
 .intro h1, .intro h2 {
@@ -176,6 +177,29 @@ body {
 
 .intro-buttons > a:last-child {
 	margin-right: 0;
+}
+
+.intro-icon {
+	position: absolute;
+}
+
+.intro-icon a {
+	color: #474747;
+}
+
+.intro-icon:first-child {
+	top: 35px;
+	right: 95px;
+}
+
+.intro-icon:nth-child(2) {
+	top: 65px;
+	right: 95px;
+}
+
+.intro-icon:last-child {
+	top: 95px;
+	right: 95px;
 }
 
 /* Advantages */
