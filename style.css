@@ -20,6 +20,7 @@ body {
 	font-weight: bold;
 	text-decoration: none;
 	color: black;
+	transition: box-shadow 0.3s linear;
 }
 
 .btn > div {
@@ -56,6 +57,20 @@ body {
 	background: linear-gradient(135deg, rgba(88,44,126,1) 0%, rgba(98,120,206,1) 100%);
 }
 
+.btn-purple:hover, .btn-blue:hover {
+	box-shadow: 0px 5px 10px 3px rgba(79,48,123,0.3), 0px 8px 10px 3px rgba(0,212,255,0.3);
+}
+
+.btn-blue {
+	background: rgb(120,187,223);
+	background: linear-gradient(135deg, rgba(120,187,223,1) 0%, rgba(103,122,230,1) 100%);
+}
+
+.btn-fix-support {
+	padding: 16px 36px;
+	border-radius: 36px;
+}
+
 /* Header */
 .header-inner {
 	margin-top: 20px;
@@ -77,17 +92,18 @@ body {
 	margin-left: auto;
 }
 
-.header-nav span {
-	cursor: pointer;
+.header-nav a {
+	color: #474747;
+	text-decoration: none;
 	margin-right: 25px;
 }
 
-.header-nav span:hover {
+.header-nav a:hover {
 	text-decoration: underline;
 	font-weight: bold;
 }
 
-.header-nav span:last-child {
+.header-nav a:last-child {
 	margin-right: 70px;
 }
 
@@ -276,7 +292,51 @@ body {
 	margin-left: 100px;
 }
 
-/* Slider */
+/* Devices */
+.devices {
+	margin-top: 60px;
+	padding-bottom: 200px;
+	background: url("img/devices.png");
+	background-repeat: no-repeat;
+	background-position: 74% 5px;
+	position: relative;
+}
+
+.devices-slider {
+	position: relative;
+	margin-left:  460px;
+	margin-bottom: 90px;
+}
+
+.devices-slider-button {
+	width: 11px;
+	height: 11px;
+	background: #b9b9b9;
+	position: absolute;
+	left: -25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.devices-slider-button-active {
+	left: -26px;
+	width: 13px;
+	height: 13px;
+	background: #171717;
+}
+
+.devices-slider-button:first-child {
+	top: 13px;
+}
+
+.devices-slider-button:nth-child(2) {
+	top: 36px;
+}
+
+.devices-slider-button:last-child {
+	top: 59px;
+}
+
 .devices-slider-text {
 	font-size: 24px;
 	width: 520px;
@@ -286,4 +346,185 @@ body {
 .devices-slider-text span {
 	font-size: 16px;
 	color: #727272;
+}
+
+.devices-info {
+	text-align: center;
+}
+
+.devices-info h2 {
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	margin-left: 2%;
+}
+
+.devices-text {
+	text-align: right;
+	margin-left: 36%;
+	width: 450px;
+	color: #939292;
+}
+
+.devices-buttons > img {
+	border-radius: 8px;
+}
+
+.devices-buttons > img:first-child {
+	margin-top: 32px;
+	margin-right: 10px;
+}
+
+.horizontal-3 {
+	position: absolute;
+	right: 0;
+	bottom: 41px;
+	width: 76%;
+	height: 1px;
+	background: #bfbfbf;
+	z-index: -1;
+}
+
+.fill {
+	position: absolute;
+	background: #f9f9f9;
+	top: -30px;
+	left: 0;
+	background: linear-gradient(-7deg, #f9f9f9, #f9f9f9 30%, #f9f9f9 60%, #fff 60%); 
+	width: 100%;
+	height: 1000px;
+	z-index: -2;
+}
+
+/* Privacy */
+.privacy {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 80px;
+	position: relative;
+	background: #f9f9f9;
+}
+
+.privacy h2 {
+	font-weight: 400;
+	font-size: 36px;
+	color: #535353;
+}
+
+.privacy h3 {
+	font-weight: 400;
+	font-size: 29px;
+	color: #7c7c7c;
+}
+
+.privacy-buttons {
+	margin-top: 30px;
+}
+
+.privacy-buttons i {
+	margin-right: 8px;
+}
+
+.privacy-buttons a:first-child {
+	margin-right: 20px;
+}
+
+.privacy-buttons a:last-child {
+	margin-left: 20px;
+}
+
+.horizontal-4 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 76%;
+	height: 1px;
+	background: #bfbfbf;
+}
+
+/* Helps */
+.helps {
+	padding-top: 20px;
+	text-align: center;
+	background: #f9f9f9;
+}
+
+.helps-text {
+	margin-left: 32%;
+	color: #7a7a7a;
+	font-size: 14px;
+}
+
+/* Footer */
+footer {
+	padding-top: 150px;
+	background: #f9f9f9;
+}
+
+.contacts {
+	display: flex;
+	font-size: 14px;
+	color: #5c5c5c;
+}
+
+.contacts-item span {
+	font-weight: bold;
+}
+
+.contacts-item {
+	text-align: right;
+	margin-right: 100px;
+}
+
+.contacts-item:first-child {
+	text-align: left;
+	flex-basis: 40%;
+	margin-right: 0;
+}
+
+.contacts-item:first-child a {
+	color: #5c5c5c;
+}
+
+.contacts-item-head {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 0.7;
+	margin-bottom: 30px;
+}
+
+.contacts-item-text {
+	font-size: 14px;
+}
+
+.contacts-item-text div {
+	margin-right: 12px;
+	position: relative;
+}
+
+.contacts-item-text a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.contacts-item-text div:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: -15%;
+	width: 5px;
+	height: 5px;
+	background: #5c5c5c;
+}
+
+/* Media */
+.media {
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+
+.media-item {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #5c5c5c;
 }
