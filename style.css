@@ -231,6 +231,7 @@ body {
 
 .advantages-item-head-text {
 	font-size: 30px;
+	font-weight: 400;
 	color: #555;
 	line-height: 0.8;
 }
@@ -275,7 +276,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.physical-text h1 {
+.physical-text h2 {
 	font-weight: 400;
 	font-size: 60px;
 }
@@ -522,7 +523,7 @@ footer {
 	font-size: 14px;
 }
 
-.contacts-item-text div {
+.contacts-item-text p {
 	margin-right: 12px;
 	position: relative;
 }
@@ -532,7 +533,7 @@ footer {
 	text-decoration: none;
 }
 
-.contacts-item-text div:after {
+.contacts-item-text p:after {
 	content: '';
 	position: absolute;
 	top: 10px;
